@@ -1,0 +1,11 @@
+config BR2_PACKAGE_DRAGON
+	bool "dragon"
+	select BR2_PACKAGE_BOOST
+	select BR2_PACKAGE_BOOST_SYSTEM
+	select BR2_PACKAGE_ZEROMQ
+	select BR2_PACKAGE_OPENSSL
+	select BR2_PACKAGE_PROTOBUF
+	select BR2_PACKAGE_PROTOBUF_C
+	select BR2_PACKAGE_LIBCPPRESTSDK
+	help
+	  Dragon application
