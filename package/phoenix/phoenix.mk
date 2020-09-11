@@ -4,7 +4,7 @@
 #
 ################################################################################
 
-PHOENIX_VERSION = 0.0.1
+PHOENIX_VERSION = 0.1.1
 PHOENIX_SITE = $(TOPDIR)/../dist/phoenix
 PHOENIX_SITE_METHOD = local
 PHOENIX_LICENSE = MIT
@@ -26,9 +26,8 @@ define PHOENIX_BUILD_CMDS
 endef
 
 define PHOENIX_INSTALL_TARGET_CMDS
-	$(INSTALL) -D \
-		$(@D)/target/$(RUSTC_TARGET_NAME)/$(PHOENIX_CARGO_MODE)/phoenix \
-		$(TARGET_DIR)/usr/bin/phoenix
+	$(INSTALL) -D $(@D)/target/$(RUSTC_TARGET_NAME)/$(PHOENIX_CARGO_MODE)/phoenix $(TARGET_DIR)/usr/bin/phoenix
+	$(INSTALL) -D $(@D)/etc/config.json $(TARGET_DIR)/usr/etc/phoenix/config.json
 endef
 
 $(eval $(generic-package))
