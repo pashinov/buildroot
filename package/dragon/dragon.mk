@@ -4,7 +4,7 @@
 #
 ################################################################################
 
-DRAGON_VERSION:=0.0.1
+DRAGON_VERSION:=0.1.1
 DRAGON_SITE = $(TOPDIR)/../dist/dragon
 DRAGON_SITE_METHOD = local
 DRAGON_LICENSE = MIT

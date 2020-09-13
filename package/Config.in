@@ -2439,7 +2439,9 @@ endmenu
 
 menu "User applications"
 	source "package/dragon/Config.in"
+	source "package/lion/Config.in"
 	source "package/phoenix/Config.in"
+	source "package/turtle/Config.in"
 endmenu
 
 endmenu
